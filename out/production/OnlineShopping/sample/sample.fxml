@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="543.0" prefWidth="659.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ListView fx:id="productListView" layoutX="47.0" layoutY="59.0" prefHeight="200.0" prefWidth="307.0" />
+      <Label layoutX="47.0" layoutY="27.0" text="Products" />
+      <ListView fx:id="shoppingCartListView" layoutX="384.0" layoutY="59.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="384.0" layoutY="27.0" text="Shopping cart" />
+      <TextField fx:id="productNameTextField" layoutX="80.0" layoutY="272.0" />
+      <TextField fx:id="lowerBoundTextfield" layoutX="80.0" layoutY="308.0" />
+      <TextField fx:id="upperBoundTextField" layoutX="80.0" layoutY="345.0" />
+      <TextField fx:id="quantityTextField" layoutX="80.0" layoutY="430.0" />
+      <Label layoutX="30.0" layoutY="277.0" text="Name" />
+      <Label layoutX="30.0" layoutY="313.0" text="Lower" />
+      <Label layoutX="30.0" layoutY="345.0" text="Upper" />
+      <Label layoutX="22.0" layoutY="435.0" text="Quantity" />
+      <Button layoutX="29.0" layoutY="382.0" mnemonicParsing="false" onAction="#filterButtonHandler" prefHeight="27.0" prefWidth="217.0" text="Filter" />
+      <Button layoutX="29.0" layoutY="465.0" mnemonicParsing="false" onAction="#addToCartButtonHandler" prefHeight="27.0" prefWidth="217.0" text="Add to cart" />
+      <Label layoutX="390.0" layoutY="291.0" text="Total price:" />
+      <Label fx:id="totalPriceLabel" layoutX="469.0" layoutY="291.0" prefHeight="17.0" prefWidth="36.0" />
+   </children>
+</Pane>
